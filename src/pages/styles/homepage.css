@@ -38,18 +38,24 @@
 
 .homepage-image-container {
 	width: 350px;
-	/* height: 350px; */
+	height: auto;
 }
 
 .homepage-image-wrapper {
-	overflow: hidden;
+	overflow: visible;
 	/* transform: rotate(3deg); */
 }
 
 .homepage-image-wrapper img {
-	width: 100%;
-	height: 100%;
-	border-radius: 1%;
+	border: solid 1px #FE2784;
+	background-color: #ffff33;
+	width: 300px;
+	height: auto;
+	/* top: 0;
+	left: 0; */
+	position: relative;
+	border-radius: 2%;
+	box-shadow: 15px 15px #FE2784;
 }
 
 .homepage-socials {

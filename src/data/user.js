@@ -14,7 +14,7 @@ const INFO = {
 		title: "Joy Chen",
 		name: "Joy Chen",
 		email: "joychen17@gmail.com",
-		logo: "../joy.jpeg",
+		logo: "../joy_logo.png",
 	},
 
 	socials: {

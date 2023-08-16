@@ -63,9 +63,9 @@ const Homepage = () => {
 		position: stayLogo ? "fixed" : "relative",
 		top: stayLogo ? "3vh" : "auto",
 		zIndex: 999,
-		border: stayLogo ? "1px solid white" : "none",
-		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
+		border: stayLogo ? "none" : "none",
+		borderRadius: stayLogo ? "50%" : "50%",
+		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "0px 4px 10px #dddddd",
 	};
 
 	return (
@@ -104,7 +104,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="drive_driverless.jpg"
+											src="joy.jpeg"
 											alt="about"
 											className="homepage-image"
 										/>
