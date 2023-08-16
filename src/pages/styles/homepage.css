@@ -37,8 +37,8 @@
 }
 
 .homepage-image-container {
-	width: 350px;
-	height: auto;
+	width: 450px;
+	height: 450px;
 }
 
 .homepage-image-wrapper {
@@ -49,15 +49,22 @@
 .homepage-image-wrapper img {
 	border: solid 1px #FE2784;
 	background-color: #ffff33;
-	width: 300px;
+	width: 400px;
 	height: auto;
 	/* top: 0;
 	left: 0; */
 	position: relative;
-	border-radius: 2%;
-	box-shadow: 15px 15px #FE2784;
+	border-radius: 10px;
+	box-shadow: 12px 12px #FE2784;
+	overflow: hidden;
+    transition:transform 0.25s ease;
 }
 
+.homepage-image-wrapper img:hover {
+    -webkit-transform:scale(1.3); /* or some other value */
+    transform:scale(1.3);
+	z-index: 2;
+}
 .homepage-socials {
 	display: flex;
 	justify-content: left;

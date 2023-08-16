@@ -44,20 +44,29 @@
 }
 
 .about-image-container {
-	width: 370px;
+	width: 450px;
+	height: 350px;
 }
 
 .about-image-wrapper {
 	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	/* transform: rotate(3deg); */
+	overflow: visible;
 }
 
 .about-image-wrapper img {
 	display: block;
-	width: 100%;
-	border-radius: 1%;
+	width: 400px;
+	border-radius: 10px;
+	border: solid 1px #FE2784;
+	background-color: #ffff33;
+	box-shadow: 12px 12px #FE2784;
+    transition:transform 0.25s ease;
+}
+
+.about-image-wrapper img:hover {
+    -webkit-transform:scale(1.3); /* or some other value */
+    transform:scale(1.3);
+	z-index: 2;
 }
 
 .about-socials {

@@ -104,7 +104,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="joy.jpeg"
+											src="drive_driverless.jpg"
 											alt="about"
 											className="homepage-image"
 										/>
