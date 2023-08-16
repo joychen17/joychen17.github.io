@@ -48,7 +48,6 @@ const Contact = () => {
 							is to connect via LinkedIn, my profile is listed below.
 						</div>
 						<div className="subtitle contact-subtitle">
-							Alternatively, my email is provided as well.
 						</div>
 					</div>
 

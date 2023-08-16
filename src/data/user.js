@@ -13,7 +13,7 @@ const INFO = {
 	main: {
 		title: "Joy Chen",
 		name: "Joy Chen",
-		email: "joychen17@gmail.com",
+		email: "",
 		logo: "../joy_logo.png",
 	},
 

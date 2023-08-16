@@ -28,18 +28,6 @@ const Socials = () => {
 			</div> */}
 
 			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faGithub}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on GitHub</div>
-				</a>
-			</div>
-
-			<div className="social">
 				<a
 					href={INFO.socials.linkedin}
 					target="_blank"
@@ -52,6 +40,18 @@ const Socials = () => {
 						/>
 					</div>
 					<div className="social-text">Connect on LinkedIn</div>
+				</a>
+			</div>
+
+			<div className="social">
+				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faGithub}
+							className="social-icon"
+						/>
+					</div>
+					<div className="social-text">Follow on GitHub</div>
 				</a>
 			</div>
 
@@ -71,7 +71,7 @@ const Socials = () => {
 				</a>
 			</div> */}
 
-			<div className="email">
+			{/* <div className="email">
 				<div className="email-wrapper">
 					<a
 						href={`mailto:${INFO.main.email}`}
@@ -85,7 +85,7 @@ const Socials = () => {
 						<div className="social-text">{INFO.main.email}</div>
 					</a>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
