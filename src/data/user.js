@@ -50,102 +50,94 @@ const INFO = {
 		{
 			title: "Portrait of nephew",
 			description:
-				"Digital art, 2019",
+				"Digital art, Procreate", // 2019
 			img_file: art1,
 			logo: "",
 			linkText: "View Project",
 			link: "",
 		},
-
 		{
-			title: "Egg boy",
+			title: "Heritage house",
 			description:
-				"Digital art, 2019",
-			img_file: art2,
+				"Colored pencil on paper", // 2007
+			img_file: art7,
 			logo: "",
 			linkText: "View Project",
 			link: "",
 		},
-
+		{
+			title: "Portrait",
+			description:
+				"Colored pencil on paper", // 2015
+			img_file: art6,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
 		{
 			title: "Portrait of a redditor",
 			description:
-				"Digital art, 2019",
+				"Digital art, Procreate", // 2019
 			img_file: art3,
 			logo: "",
 			linkText: "View Project",
 			link: "",
 		},
-
+		{
+			title: "Life drawing",
+			description:
+				"Colored pencil on paper", // 2008
+			img_file: art8,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
+		{
+			title: "Moonflower",
+			description:
+				"Colored pencil on paper", // 2008
+			img_file: art10,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
+		{
+			title: "Still life",
+			description:
+				"Acrylic paint on canvas", // 2007
+			img_file: art9,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
+		{
+			title: "Illustration for children's book",
+			description:
+				"Oil pastel and watercolor on paper", // 2008
+			img_file: art5,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
+		{
+			title: "Egg boy",
+			description:
+				"Digital art, Procreate", // 2019
+			img_file: art2,
+			logo: "",
+			linkText: "View Project",
+			link: "",
+		},
 		{
 			title: "Tiger boy",
 			description:
-				"Digital art, 2018",
+				"Digital art, Procreate", // 2018
 			img_file: art4,
 			logo: "",
 			linkText: "View Project",
 			link: "",
 		},
 
-		{
-			title: "Portrait",
-			description:
-				"Colored pencil, 2015",
-			img_file: art6,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
-
-		{
-			title: "Moonflower",
-			description:
-				"Colored pencil, 2008",
-			img_file: art10,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
-
-		{
-			title: "Illustration for children's book",
-			description:
-				"Oil pastel, 2008",
-			img_file: art5,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
-
-		{
-			title: "Life drawing",
-			description:
-				"Colored pencil, 2008",
-			img_file: art8,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
-
-		{
-			title: "Heritage house",
-			description:
-				"Colored pencil, 2007",
-			img_file: art7,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
-
-		{
-			title: "Still life",
-			description:
-				"Acrylic paint, 2007",
-			img_file: art9,
-			logo: "",
-			linkText: "View Project",
-			link: "",
-		},
 	],
 };
 
