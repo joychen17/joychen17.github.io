@@ -5,7 +5,7 @@ function work_entry_1() {
 		date: "Jan 2023 - present",
 		title: "Sr. Software Engineer, Qualcomm",
 		description:
-			"Working in the Compiler Toolchain team of the Nuvia business unit. Supporting hardware team in gathering traces for performance measurement of ARM matrix extension. Created visualization tool for viewing different addressing modes of new array register feature.",
+			"Working in the Compiler Toolchain team of the Nuvia business unit. Supporting hardware team in gathering traces for performance measurements. Created visualization tool for viewing different addressing modes of new hardware registers.",
 		keywords: [
 		],
 		style: `
