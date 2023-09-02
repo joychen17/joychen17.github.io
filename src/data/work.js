@@ -64,7 +64,7 @@ function work_entry_4() {
 		date: "Feb 2016 - May 2016",
 		title: "Graduate Software Engineer Intern, Intel Corporation",
 		description:
-			"Created an analysis framework with the primary goal of determining hardware accelerable regions of code within a generic computer program. Further, the framework allows for exploration of hardware accelerator architectures, evaluation of accelerator platforms, and estimation of program speedup. This work is currently ongoing.",
+			"Created an analysis framework with the primary goal of determining hardware accelerable regions of code within a generic computer program. Further, the framework allows for exploration of hardware accelerator architectures, evaluation of accelerator platforms, and estimation of program speedup.",
 		style: ``,
 		keywords: [
 		],
@@ -80,7 +80,7 @@ function work_entry_5() {
 		date: "Sep 2014 - Jul 2017",
 		title: "Master's degree, Computer Engineering, University of Toronto",
 		description:
-			"My thesis project dealt with improving memory architecture for parallel hardware implemented on an FPGA through the High-Level Synthesis of multithreaded C.",
+			"My thesis project dealt with improving memory architecture for parallel hardware implemented on an FPGA through the High-Level Synthesis of multithreaded C. The associated conference paper is in the Publications section.",
 		style: ``,
 		keywords: [
 		],

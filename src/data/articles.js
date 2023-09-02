@@ -43,7 +43,7 @@ function article_1() {
 function article_2() {
 	return {
 		date: "4 September 2017",
-		title: "Automated generation of banked memory architectures in the high-level synthesis of multi-threaded software",
+		title: "Automated generation of banked memory architectures in the high-level synthesis of multi-threaded software (Master's thesis)",
 		description:
 			"Some modern high-level synthesis (HLS) tools permit the synthesis of multi-threaded software into parallel hardware, where concurrent software threads are realized as concurrently operating hardware units. A common performance bottleneck in any parallel implementation (whether it be hardware or software) is memory bandwidth — parallel threads demand concurrent access to memory resulting in contention which hurts performance. FPGAs contain an abundance of independently accessible memories offering high internal memory bandwidth. We describe an approach for leveraging such bandwidth in the context of synthesizing parallel software into hardware. Our approach applies trace-based profiling to determine how a program's arrays should be automatically partitioned into sub-arrays, which are then implemented in separate on-chip RAM blocks within the target FPGA. The partitioning is accomplished in a way that requires a single HLS execution and logic simulation for trace extraction. The end result is that each thread, when implemented in hardware, has exclusive access to its own memories to the extent possible, significantly reducing contention and arbitration and thus raising performance.",
 		style: ``,
