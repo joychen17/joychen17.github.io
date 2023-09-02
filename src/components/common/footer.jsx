@@ -32,7 +32,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Joy Chen. Theme by Tharindu.dev
+						© 2023 Joy Chen. Based on theme by Tharindu.dev
 					</div>
 				</div>
 			</div>

@@ -12,10 +12,9 @@
 }
 
 .project:hover {
-	opacity: 0.6;
-	background: #eeeeee;
+	background: var(--tertiary-color);
 	transition: border 0.1s ease-in-out;
-	border: solid 1px #FE2784;
+	border: solid 1px var(--dark-green-color);
 }
 
 .project:hover .project-link {

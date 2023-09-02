@@ -24,7 +24,16 @@
 }
 
 .homepage-title {
+	font-size: 64px !important;
 	width: 85% !important;
+	/* background: linear-gradient(
+      217deg,
+      var(--dark-purple-color),
+      rgba(255, 0, 0, 0) 70.71%
+    ), linear-gradient(127deg, var(--hot-pink-color), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, var(--dark-green-color), rgba(0, 0, 255, 0) 70.71%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 }
 
 .homepage-subtitle {
@@ -47,15 +56,15 @@
 }
 
 .homepage-image-wrapper img {
-	border: solid 1px #FE2784;
-	background-color: #ffff33;
+	border: solid 1px var(--dark-green-color);
+	background-color: var(--dark-green-color);
 	width: 400px;
 	height: auto;
 	/* top: 0;
 	left: 0; */
 	position: relative;
 	border-radius: 10px;
-	box-shadow: 12px 12px #FE2784;
+	box-shadow: 12px 12px var(--dark-green-color);
 	overflow: hidden;
     transition:transform 0.25s ease;
 }

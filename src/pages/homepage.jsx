@@ -65,7 +65,7 @@ const Homepage = () => {
 		zIndex: 999,
 		border: stayLogo ? "none" : "none",
 		borderRadius: stayLogo ? "50%" : "50%",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "0px 4px 10px #dddddd",
+		boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.25)",
 	};
 
 	return (

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 import "./styles/project.css";
 
@@ -15,7 +17,7 @@ const popupStyle = {
 		bottom: 'auto',
 		height: '100%',
 		width: '100%',
-		background: 'rgba(255, 255, 255, 1)',
+		background: 'rgba(0,0,0,0.9)',
 		outline: 'none',
 		border: 'none',
 		position: 'relative',
