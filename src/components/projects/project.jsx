@@ -19,7 +19,6 @@ const popupStyle = {
 		width: '100%',
 		background: 'rgba(0,0,0,0.9)',
 		outline: 'none',
-		border: 'none',
 		position: 'relative',
 		text_align: 'center',
 	},
@@ -31,6 +30,7 @@ const imageStyle = {
 	margin: 'auto',
 	padding: '5% 0 5% 0',
 	display: 'block',
+	background: 'none',
 };
 
 const Project = (props) => {
@@ -49,7 +49,6 @@ const Project = (props) => {
 							isOpen={isOpen}
 							contentLabel="Example Modal"
 					 		onRequestClose={() => setIsOpen(false)}
-							shouldCloseOnOverlayClick="true"
 							style={popupStyle}
 						>
 							<img src={img_file} 
