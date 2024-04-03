@@ -33,7 +33,7 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"predeploy": "npm run build; rm -r node_modules/.cache/gh-pages",
+		"predeploy": "npm run build; rm -rf node_modules/.cache/gh-pages",
 		"deploy": "gh-pages -b gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
