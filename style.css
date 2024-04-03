@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro&family=Rammetto+One&family=Titan+One&family=Paytone+One&display=swap,https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Barlow:wght@300&display=swap&family=Handjet:wght@400&display=swap");
 
+body {
+    background-color: #f2e6d5;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +13,7 @@
 
 /* Navbar Section */
 .navbar {
+    overflow-x: hidden;
     background-color: #111B0C;
     height: 54px;
     display: flex;
@@ -118,6 +123,12 @@
         z-index: 1;
         max-width: 1300px;
         padding: 0 50px;
+        background-color: #111B0C;
+    }
+
+    .navbar {
+        background-color: #111B0C;
+        overflow-x: clip;
     }
 
     .navbar_menu {
@@ -142,10 +153,6 @@
         height: 100vh;
         width: 100vw;
         font-size: 0.8rem
-    }
-
-    .navbar {
-        background-color: #f2e6d5;
     }
 
     .navbar_toggle .bar {
@@ -183,8 +190,8 @@
         position: absolute;
         right: 10px;
         transition: all 0.3s ease;
-        background-color: #111B0C;
-        color: white;
+        color: #111B0C;
+        background-color: white;
     }
 
     /* .navbar_btn {
