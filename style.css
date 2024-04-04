@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro&family=Rammetto+One&family=Titan+One&family=Paytone+One&display=swap,https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Barlow:wght@300&display=swap&family=Handjet:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap&family=Josefin+Sans&family=Maven+Pro&family=Rammetto+One&family=Titan+One&family=Paytone+One&display=swap,https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Barlow:wght@300&display=swap&family=Handjet:wght@400&display=swap");
 
 body {
     background-color: #f2e6d5;
@@ -219,3 +219,100 @@ body {
 
 }
 
+/* Main Section */
+.main {
+    height: calc(100vh - 54px);
+    background-color: #f2e6d5;
+    z-index: 1;
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 54px;
+    transform: translateY(20%);
+}
+
+#home_img {
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    max-height: calc(50vh - 54px);
+    border-radius: 5px;
+    padding: auto;
+}
+
+.main_image_container {
+    justify-self: center;
+    align-self: center;
+}
+
+.main_container h1 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+.main_container h2 {
+    font-size: 1rem;
+}
+
+.main_container p {
+    padding: 7px 0;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 0.65rem;
+}
+
+/* Media responsive */
+@media screen and (max-width: 900px) {
+    .main {
+        height: auto;
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        transform: translateY(0%);
+    }
+
+    .main_content {
+        text-align: center;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .main_container h1 {
+        font-size: 1.25rem;
+    }
+
+    .main_container h2 {
+        font-size: 1rem;
+    }
+
+    .main_container p {
+        padding: 7px 0;
+        margin-top: 0rem;
+        font-size: 0.5rem;
+    }
+
+    #home_img {
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        border-radius: 5px;
+        padding: auto;
+    }
+
+}
+
+/* Phones */
+/* @media screen and (max-width: 480px) {
+} */
