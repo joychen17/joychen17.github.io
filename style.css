@@ -37,7 +37,7 @@ body {
 
 #navbar_logo {
     position: absolute;
-    background-color: #f2e6d5;
+    background-color: white;
     height: 34px;
     border-radius: 50%;
     right: 2%;
@@ -209,7 +209,7 @@ body {
 
     #navbar_logo {
         position: absolute;
-        background-color: #f2e6d5;
+        background-color: white;
         height: 34px;
         border-radius: 50%;
         left: 2%;
