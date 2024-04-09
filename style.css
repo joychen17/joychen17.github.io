@@ -11,6 +11,14 @@ body {
     font-family: "Rammetto One", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #224D26;
+}
+
 /* Navbar Section */
 .navbar {
     overflow-x: hidden;
@@ -33,6 +41,10 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+}
+
+.navbar_links:visited {
+    color: white;
 }
 
 #navbar_logo {
@@ -98,7 +110,8 @@ body {
 
 .navbar_links:hover {
     /* color: #DC7959; */
-    color: #E3C08A;
+    /* color: #E3C08A; */
+    color: aquamarine;
     transform: all 0.2s ease;
 }
 
