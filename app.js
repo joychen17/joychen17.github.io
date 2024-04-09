@@ -8,11 +8,11 @@ menu.addEventListener('click', function() {
     console.log(menu.classList.contains("is-active"))
     if (menu.classList.contains('is-active') == true) {
         menuButton.value = "HIDE";
-        menuButton.style.background = "white";
+        menuButton.style.background = "aquamarine";
         menuButton.style.color = "#111B0C";
     } else {
         menuButton.value = "MENU";
-        menuButton.style.background = "#111B0C";
-        menuButton.style.color = "white";
+        menuButton.style.color = "#111B0C";
+        menuButton.style.background = "white";
     }
 })
