@@ -337,8 +337,145 @@ a:visited {
 
 }
 
+/* About Section */
+.about {
+    height: calc(100vh - 54px);
+    background-color: #f2e6d5;
+    z-index: 1;
 }
 
-/* Phones */
-/* @media screen and (max-width: 480px) {
-} */
+.about_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 54px;
+    transform: translateY(20%);
+}
+
+#about_img {
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    max-height: calc(50vh - 54px);
+    border-radius: 5px;
+    padding: auto;
+    border: 2px solid #111B0C;
+    transition: transform .2s ease-in-out;
+}
+
+#about_img:hover {
+    transform: scale(1.25);
+}
+
+.about_image_container {
+    justify-self: center;
+    align-self: center;
+}
+
+.about_container h1 {
+    font-size: 1.5rem;
+    padding: 0px 0;
+}
+
+.about_container h2 {
+    font-size: 1rem;
+}
+
+.about_container p {
+    padding: 7px 0;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 0.65rem;
+}
+
+.about_container a {
+    padding: 7px 0;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 0.65rem;
+}
+
+/* About Section Media responsive */
+@media screen and (max-width: 900px) {
+    .about {
+        height: auto;
+    }
+
+    .about_container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        transform: translateY(0%);
+    }
+
+    .about_content {
+        text-align: center;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .about_container h1 {
+        font-size: 1.25rem;
+    }
+
+    .about_container h2 {
+        font-size: 1rem;
+    }
+
+    .about_container p {
+        padding: 7px 0;
+        margin-top: 0rem;
+        font-size: 0.5rem;
+    }
+
+    #about_img {
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        border-radius: 5px;
+        padding: auto;
+    }
+
+    #about_img:hover {
+        transform: none;
+    }
+
+}
+
+.social_container {
+    display: flex;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+.social_link_items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 54px;
+    width: 100vw;
+}
+
+.social_link_item {
+    width: auto;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 0.65rem;
+    padding: 10px 10px;
+}
+
+.social_link_item a {
+    width: auto;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 0.65rem;
+    padding: 10px 10px;
+}
