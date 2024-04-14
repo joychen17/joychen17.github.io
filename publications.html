@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=0.1" />
+        <title>Joy Chen</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="public/joy_logo.png">
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo_link">
+                    <img id="navbar_logo" src="public/joy_logo.png" alt="pixelated red joystick">
+                </a>
+                <div class="navbar_toggle" id="mobile_menu">
+                    <input id="menu_button" type="button" value="MENU"></input>
+                </div>
+
+                <!-- <ul class="navbar_menu_top">
+                    <li class="navbar_btn">
+                        <a href="/" class="button">Enlarge Font</a>
+                    </li>
+                </ul> -->
+
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/about.html" class="navbar_links">About</a>
+                    </li>
+                    <!-- <li class="navbar_item">
+                        <a href="/resume.html" class="navbar_links">Resume</a>
+                    </li> -->
+                    <li class="navbar_item">
+                        <a href="/publications.html" class="navbar_links">Publications</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="/creations.html" class="navbar_links">Creations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <div class="publications">
+            <h1>
+                Publications
+            </h1>
+            <div class="publications_container">
+                <div class="publication_entry">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9373921">
+                        <h3>
+                            Compute Substrate for Software 2.0
+                        </h3>
+                    </a>
+                    <h4>
+                        Jasmina Vasiljevic , Ljubisa Bajic, Davor Capalija, Stanislav Sokorac, Dragoljub Ignjatovic , Lejla Bajic,
+                        Milos Trajkovic, Ivan Hamer, Ivan Matosevic, Aleksandar Cejkov, Utku Aydonat , Tony Zhou, Syed Zohaib Gilani,
+                        Armond Paiva, Joseph Chu, Djordje Maksimovic, Stephen Alexander Chin, Zahi Moudallal, Akhmed Rakhmati,
+                        Sean Nijjar, Almeet Bhullar, Boris Drazic, Charles Lee, James Sun, Kei-Ming Kwong, James Connolly,
+                        Miles Dooley, Hassan Farooq, Joy Yu Ting Chen, Matthew Walker, Keivan Dabiri, Kyle Mabee, Rakesh Shaji Lal,
+                        Namal Rajatheva, Renjith Retnamma, Shripad Karodi, Daniel Rosen, Emilio Munoz, Andrew Lewycky,
+                        Aleksandar Knezevic, Raymond Kim, Allan Rui, Alexander Drouillard, and David Thompson, Tenstorrent Inc.,
+                        Toronto, ON, M3C 2G9, Canada
+                    </h4>
+                    <p>
+			            The rapidly growing compute demands of AI necessitate the creation of new computing architectures and approaches. Tenstorrent designed its architecture (embodied in Grayskull and Wormhole devices) to tackle this challenge via two fundamental and synergistic approaches. The first is via compute-on-packets fabric that is built from ground up for massive scaleout. The second is the ability to execute dynamic computation, built into the compiler, runtime software and hardware architecture. By combining these approaches, TensTorrent will enable continued scaling of AI workloads.
+                    </p>
+                </div>
+                <div class="publication_entry">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/8056841">
+                        <h3>
+                            Automated generation of banked memory architectures in the high-level synthesis of multi-threaded software (Master's thesis)
+                        </h3>
+                    </a>
+                    <h4>
+                        Yu Ting Chen, Jason H Anderson
+                    </h4>
+                    <p>
+                        Some modern high-level synthesis (HLS) tools permit the synthesis of multi-threaded software into parallel hardware, where concurrent software threads are realized as concurrently operating hardware units. A common performance bottleneck in any parallel implementation (whether it be hardware or software) is memory bandwidth — parallel threads demand concurrent access to memory resulting in contention which hurts performance. FPGAs contain an abundance of independently accessible memories offering high internal memory bandwidth. We describe an approach for leveraging such bandwidth in the context of synthesizing parallel software into hardware. Our approach applies trace-based profiling to determine how a program's arrays should be automatically partitioned into sub-arrays, which are then implemented in separate on-chip RAM blocks within the target FPGA. The partitioning is accomplished in a way that requires a single HLS execution and logic simulation for trace extraction. The end result is that each thread, when implemented in hardware, has exclusive access to its own memories to the extent possible, significantly reducing contention and arbitration and thus raising performance.
+                    </p>
+                </div>
+                <div class="publication_entry">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/7368920">
+                        <h3>
+                            A Survey and Evaluation of FPGA High-Level Synthesis Tools
+                        </h3>
+                    </a>
+                    <h4>
+                        Razvan Nane, Vlad-Mihai Sima, Christian Pilato, Jongsok Choi, Blair Fort, Andrew Canis, Yu Ting Chen, Hsuan Hsiao, Stephen Brown, Fabrizio Ferrandi, Jason Anderson, Koen Bertels
+                    </h4>
+                    <p>
+                        High-level synthesis (HLS) is increasingly popular for the design of high-performance and energy-efficient heterogeneous systems, shortening time-to-market and addressing today’s system complexity. HLS allows designers to work at a higher-level of abstraction by using a software program to specify the hardware functionality. Additionally, HLS is particularly interesting for designing field-programmable gate array circuits, where hardware implementations can be easily refined and replaced in the target device. Recent years have seen much activity in the HLS research community, with a plethora of HLS tool offerings, from both industry and academia. All these tools may have different input languages, perform different internal optimizations, and produce results of different quality, even for the very same input description. Hence, it is challenging to compare their performance and understand which is the best for the hardware to be implemented. We present a comprehensive analysis of recent HLS tools, as well as overview the areas of active interest in the HLS research community. We also present a first-published methodology to evaluate different HLS tools. We use our methodology to compare one commercial and three academic tools on a common set of C benchmarks, aiming at performing an in-depth evaluation in terms of performance and the use of resources.
+                    </p>
+                </div>
+                <div class="publication_entry">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-26408-0_10">
+                        <h3>
+                            LegUp High-Level Synthesis
+                        </h3>
+                    </a>
+                    <h4>
+                        Andrew Canis, Jongsok Choi, Blair Fort, Bain Syrowik, Ruo Long Lian, Yu Ting Chen, Hsuan Hsiao, Jeffrey Goeders, Stephen Brown & Jason Anderson 
+                    </h4>
+                    <p>
+                        LegUp is a High-level Synthesis tool under active development at the University of Toronto since 2011. The tool is on its fourth public release, is open source and freely downloadable. LegUp has been the subject of over 15 publications and has been downloaded by over 1500 groups from around the world. In this section, we overview LegUp, its programming model, unique aspects of the tool versus other HLS offerings, and conclude with a case study.
+                    </p>
+                </div>
+                <div class="publication_entry">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/6962276">
+                        <h3>
+                            Automating the Design of Processor/Accelerator Embedded Systems with LegUp High-Level Synthesis
+                        </h3>
+                    </a>
+                    <h4>
+                        Blair Fort, Andrew Canis, Jongsok Choi, Nazanin Calagar, Ruolong Lian, Stefan Hadjis, Yu Ting Chen, Mathew Hall, Bain Syrowik, Tomasz Czajkowski, Stephen Brown, Jason Anderson
+                    </h4>
+                    <p>
+                        LegUp is an open-source high-level synthesis (HLS) tool that accepts a C program as input and automatically synthesizes it into a hybrid system. The hybrid system comprises an embedded processor and custom accelerators that realize user-designated compute-intensive parts of the program with improved throughput and energy efficiency. In this paper, we overview the LegUp framework and describe several recent developments: 1) support for an embedded ARM processor, as is available on Altera's recently released SoC FPGA, 2) HLS support for software parallelization schemes -- pthreads and OpenMP, 3) enhancements to LegUp's core HLS algorithms that raise the quality of the auto-generated hardware, and, 4) a preliminary debugging and verification framework providing C source-level debugging of HLS hardware. Since its first release in 2011, LegUp has been downloaded over 1000 times by groups around the world, providing a powerful platform for new research in high-level synthesis algorithms and embedded systems design.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
