@@ -29,17 +29,17 @@ a:visited {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 99;
 }
 
 .navbar_container {
     display: flex;
     height: 54px;
     width: 100%;
-    z-index: 1;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    z-index: 100;
 }
 
 .navbar_links:visited {
@@ -164,7 +164,8 @@ a:visited {
         transition: all 0.2s ease;
         height: 100vh;
         width: 100vw;
-        font-size: 1rem
+        font-size: 1rem;
+        z-index: 99;
     }
 
     .navbar_toggle .bar {
@@ -204,6 +205,7 @@ a:visited {
         transition: all 0.2s ease;
         color: #111B0C;
         background-color: white;
+        z-index: 1000;
     }
 
     /* .navbar_btn {
