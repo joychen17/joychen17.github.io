@@ -350,7 +350,7 @@ a:visited {
 .about_container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 1fr auto auto;
     margin: 0 auto;
     z-index: 1;
     width: 100%;
@@ -403,12 +403,21 @@ a:visited {
     font-size: 1.5rem;
 }
 
+.about_connect_container {
+    padding-top: 1rem;
+    font-family: "Reddit Mono", sans-serif;
+    font-size: 1rem;
+    grid-column: 1/4;
+    text-align: center;
+}
+
 .social_container {
     grid-column: 1/4;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 2rem;
+    padding-bottom: 54px;
 }
 
 .social_link_items {
@@ -443,7 +452,7 @@ a:visited {
     }
 
     .about_container {
-        grid-template-rows: 1fr auto auto;
+        grid-template-rows: 1fr auto auto auto;
         align-items: center;
         justify-self: center;
         justify-items: center;
@@ -498,8 +507,14 @@ a:visited {
         transform: none;
     }
 
-    .social_container {
+    .about_connect_container {
+        grid-column: 1/4;
         grid-row: 3/4;
+        text-align: center;
+    }
+
+    .social_container {
+        grid-row: 4/5;
         justify-content: center;
         align-self: start;
         align-items: start;
