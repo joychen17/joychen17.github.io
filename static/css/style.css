@@ -13,10 +13,15 @@ body {
 
 a {
     text-decoration: none;
+    color: #224D26;
+}
+
+a:hover {
+    color: #926A00;
 }
 
 a:visited {
-    color: #224D26;
+    color: #5D7E7A;
 }
 
 /* Navbar Section */
