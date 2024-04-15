@@ -127,27 +127,25 @@ a:visited {
 
 /* Navbar Media Responsive */
 @media screen and (max-width: 720px) {
+    .navbar {
+        background-color: #111B0C;
+        overflow-x: clip;
+    }
+
     .navbar_container {
         display: flex;
         justify-content: space-between;
         height: 54;
-        width: 100%;
+        width: 100vw;
         z-index: 1;
-        max-width: 1300px;
         padding: 0 50px;
         background-color: #111B0C;
-    }
-
-    .navbar {
-        background-color: #111B0C;
-        overflow-x: clip;
     }
 
     .navbar_menu {
         display: grid;
         grid-template-columns: auto;
         margin: 0;
-        width: 100%;
         position: absolute;
         right: -1000px;
         opacity: 0;
@@ -159,13 +157,14 @@ a:visited {
 
     .navbar_menu.active { /* triggered by js */
         background-color: #111B0C;
-        right: 0;
         opacity: 1;
         transition: all 0.2s ease;
         height: 100vh;
         width: 100vw;
         font-size: 1rem;
-        position: absolute;
+        position: fixed;
+        bottom: 0;
+        right: 0;
         z-index: 99;
     }
 
