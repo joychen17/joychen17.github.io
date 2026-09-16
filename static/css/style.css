@@ -764,40 +764,44 @@ html.creations_zoom_open {
     font-size: 1.75rem;
 }
 
-.publications_entries {
+.publication_entries {
     display: grid;
-    grid-template-columns: repeat(1, minmax(calc(720px - 54px - 54px), 1fr));
-    grid-template-rows: repeat(auto, minmax(150px, 1fr));
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
     margin: 0 auto;
-    z-index: 1;
-    height: 100%;
-    width: calc(100vw - 54px - 54px);
+    width: 100%;
     padding: 10px 0px;
-    justify-items: center;
-    align-items: center;
 }
 
 .publication_entry {
     width: 100%;
+    padding: 20px;
+    background-color: #fff9f0;
+    border: 1px solid #e5d6c4;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
     text-indent: 0;
 }
 
+.publication_entry a[target="_blank"] {
+    cursor: url("../../resources/images/open-in-new-tab-cursor.svg") 14 1, pointer;
+}
+
 .publication_entry h3 {
-    padding-top: 15px;
+    padding-top: 0;
     /* margin-left: 10px;
     margin-right: 10px; */
     font-size: 1.5rem;
     font-family: "Reddit Mono", sans-serif;
     justify-content: left;
-    color: inherit;
+    color: #17341b;
 }
 
 .publication_entry h4 {
     /* padding-left: 10px;
     padding-right: 10px; */
-    font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
     font-family: "Reddit Mono", sans-serif;
     font-style: oblique;
     color: #5D7E7A;
@@ -806,15 +810,31 @@ html.creations_zoom_open {
     text-indent: 0;
 }
 
+.publication_author_highlight {
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
 .publication_entry p {
     padding-top: 5px;
     /* padding-left: 10px;
     padding-right: 10px; */
-    padding-bottom: 15px;
+    padding-bottom: 0;
     font-size: 1rem;
     font-family: "Reddit Mono", sans-serif;
     justify-content: left;
     text-indent: 0;
+}
+
+.publication_entry p a {
+    font: inherit;
+    text-decoration: underline;
+}
+
+.publication_entry p strong {
+    font-family: inherit;
+    font-weight: 700;
 }
 
 /* Publications Section media responsive */
